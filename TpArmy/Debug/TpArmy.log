@@ -1,10 +1,18 @@
-﻿Build started 23/01/2015 12:40:59.
-     1>Project "E:\Cours\CoursC++\TpArmy\TpArmy\TpArmy.vcxproj" on node 2 (Build target(s)).
+﻿Build started 18/02/2015 15:15:45.
+     1>Project "E:\Cours\CoursC++\TpArmy\TpArmyC-\TpArmy\TpArmy.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\TpArmy.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt capacity.cpp
-         capacity.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\TpArmy.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt TpArmy.cpp
+         TpArmy.cpp
+     1>e:\cours\coursc++\tparmy\tparmyc-\tparmy\tparmy.cpp(41): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\cours\coursc++\tparmy\tparmyc-\tparmy\tparmy.cpp(42): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\cours\coursc++\tparmy\tparmyc-\tparmy\tparmy.cpp(39): warning C4101: 'fitness' : unreferenced local variable
+     1>e:\cours\coursc++\tparmy\tparmyc-\tparmy\tparmy.cpp(75): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>e:\cours\coursc++\tparmy\tparmyc-\tparmy\tparmy.cpp(76): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>e:\cours\coursc++\tparmy\tparmyc-\tparmy\tparmy.cpp(89): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\cours\coursc++\tparmy\tparmyc-\tparmy\tparmy.cpp(118): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\cours\coursc++\tparmy\tparmyc-\tparmy\tparmy.cpp(179): warning C4018: '<' : signed/unsigned mismatch
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Cours\CoursC++\TpArmy\Debug\TpArmy.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Cours\CoursC++\TpArmy\Debug\TpArmy.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Cours\CoursC++\TpArmy\Debug\TpArmy.lib" /MACHINE:X86 Debug\armorCapacity.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Cours\CoursC++\TpArmy\TpArmyC-\Debug\TpArmy.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Cours\CoursC++\TpArmy\TpArmyC-\Debug\TpArmy.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Cours\CoursC++\TpArmy\TpArmyC-\Debug\TpArmy.lib" /MACHINE:X86 Debug\armorCapacity.obj
          Debug\army.obj
          Debug\capacity.obj
          Debug\damageCapacity.obj
@@ -20,9 +28,9 @@
          Debug\stdafx.obj
          Debug\TpArmy.obj
          Debug\unit.obj
-         TpArmy.vcxproj -> E:\Cours\CoursC++\TpArmy\Debug\TpArmy.exe
-     1>Done Building Project "E:\Cours\CoursC++\TpArmy\TpArmy\TpArmy.vcxproj" (Build target(s)).
+         TpArmy.vcxproj -> E:\Cours\CoursC++\TpArmy\TpArmyC-\Debug\TpArmy.exe
+     1>Done Building Project "E:\Cours\CoursC++\TpArmy\TpArmyC-\TpArmy\TpArmy.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.29
+Time Elapsed 00:00:00.79

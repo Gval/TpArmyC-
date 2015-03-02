@@ -9,5 +9,7 @@ public:
 	~rangeCapacity();
 
 	void updateValue();
+	void upgrade();
 };
 
+std::ostream& operator<<(std::ostream &o, rangeCapacity &r);

@@ -4,11 +4,12 @@
 #include "health.h"
 #include "speedCapacity.h"
 #include "armorCapacity.h"
-#include "reloadSpeedCapacity.h"*
+#include "reloadSpeedCapacity.h"
 #include "regenCapacity.h"
-#include "damageCapacity.h"*
+#include "damageCapacity.h"
 #include "rangeCapacity.h"
 #include <vector>
+#include <list>
 
 /*
 	Une unité peut fournir :  
@@ -23,14 +24,9 @@ class unit
 {
 private:
 	std::vector<capacity*> _listCapacity;
-	/*
-	 std::vector<std::unique_ptr<superclass>> superman;
-	*/
 	int _Id;
-	int _unitLevel;
 	int _reloadTime;
 	point _unitPosition;
-
 	std::string _iaCode;
 
 	
@@ -59,8 +55,9 @@ private:
 
 public:
 	unit();
-	unit(int level);
+	unit(int level,int Id);
 	unit(std::string _iaCode, std::vector<int> _levelsCapacity);
+	unit(const unit *u);
 	~unit();
 
 	void intializeUnit();
@@ -73,7 +70,9 @@ public:
 	regenCapacity& getRegen();
 	reloadSpeedCapacity& getReload();
 	int getunitLevel();
-	point& getPosition();
+	point getPosition();
+	void setPosition(const point& p);
+	void mutate();
 
 	void refresh();
 	bool isAlive();
@@ -82,5 +81,13 @@ public:
 
 	int getId();
 	void giveLevelToCapacity();
+	void giveIa();
+	std::string getIa();
+
+	unit* operator*(const unit &r) const;
+
+	int _unitLevel;
 };
+
+std::ostream& operator<<(std::ostream&, unit&);
 

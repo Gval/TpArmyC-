@@ -9,5 +9,7 @@ public:
 	~regenCapacity();
 
 	void updateValue();
+	void upgrade();
 };
 
+std::ostream& operator<<(std::ostream &o, regenCapacity &r);

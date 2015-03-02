@@ -1,6 +1,8 @@
 ﻿#pragma once
 #include "unit.h"
-
+#include "point.h"
+#include <algorithm>
+#include <iostream>
 /*
 	Une armée peut fournir :   
 		● la liste de ses unités (méthode std::vector<Unit*> getUnitsList())  
@@ -22,8 +24,6 @@ class army
 {
 private:
 	std::vector<unit*> _unitList;
-	
-
 public:
 	army();
 	army(int unitNumber, int globalLevel);
@@ -35,6 +35,19 @@ public:
 
 	std::vector<unit*> getUnitList();
 
+	unit& getNearestUnit(point& p) const;
+	unit& getFurtherUnit(point& p) const;
+	unit& getLowestUnit(int capa_index);
+	unit& getHiggestUnit(int capa_index);
+
+	//Ajout pour test
+	void setUnitList(std::vector<unit*> unitList);
+
 	int size();
+
+	int score;
+
+	army& mutate();
+	/*army* operator*(const army &r) const;*/
 };
 

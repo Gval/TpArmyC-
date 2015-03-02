@@ -36,3 +36,8 @@ void capacity::setValue(float setVal) {
 void capacity::updateValue()
 {
 }
+
+std::ostream& operator<<(std::ostream& o, capacity& r)
+{
+	return o;
+}

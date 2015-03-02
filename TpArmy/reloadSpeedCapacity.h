@@ -9,5 +9,9 @@ public:
 	~reloadSpeedCapacity();
 
 	void updateValue();
+	void upgrade();
 };
+
+std::ostream& operator<<(std::ostream &o, reloadSpeedCapacity &r);
+
 

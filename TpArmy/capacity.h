@@ -1,4 +1,5 @@
 #pragma once
+#include <ostream>
 
 class capacity
 {
@@ -7,15 +8,17 @@ public:
 	capacity(int level);
 	~capacity();
 
-	void upgrade();
+	virtual void upgrade();
 	void downgrade();
 	virtual void updateValue();
 	int getLevel();
-	float getValue();
-	void setValue(float setVal);
+	virtual float getValue();
+	virtual void setValue(float setVal);
 
+	
 private:
 	int _Level;
 	float _value;
 };
 
+std::ostream& operator <<(std::ostream&, capacity&);

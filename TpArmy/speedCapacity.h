@@ -9,5 +9,7 @@ public:
 	~speedCapacity();
 
 	void updateValue();
+	void upgrade();
 };
 
+std::ostream& operator<<(std::ostream &o, speedCapacity &r);

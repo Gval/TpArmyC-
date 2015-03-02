@@ -9,5 +9,7 @@ public:
 	~armorCapacity();
 
 	void updateValue();
+	void upgrade();
 };
 
+std::ostream& operator<<(std::ostream &o, armorCapacity &r);
